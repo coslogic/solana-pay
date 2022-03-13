@@ -33,7 +33,7 @@ export function Pay() {
     try {
       console.log('2. 🛍 Simulate a customer checkout \n');
       const recipient = new PublicKey(
-        'DtvHv5rGRAdEN4WpGtqdSNvSv1W8FXp4ZG39KaHqwmkh'
+        'CEA4YbncmPbZQ8Mz28RmFKrnUkEh2SiqV5zx8WB7yUko'
       );
       const amount = new BigNumber(0.01);
       const reference = referenceState;
@@ -109,7 +109,7 @@ export function Pay() {
 
       //fetch merchant information
       let newBalance = await connection.getBalance(
-        new PublicKey('DtvHv5rGRAdEN4WpGtqdSNvSv1W8FXp4ZG39KaHqwmkh')
+        new PublicKey('CEA4YbncmPbZQ8Mz28RmFKrnUkEh2SiqV5zx8WB7yUko')
       );
       setBalance(newBalance);
       console.log(newBalance);
